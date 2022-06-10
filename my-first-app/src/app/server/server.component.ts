@@ -6,5 +6,10 @@ import { Component } from "@angular/core";
 })
 
 export class ServerComponent {
+    ServerId: number = 10;
+    ServerStatus: string = 'running';
 
+    getDoubleServerId () {
+        return this.ServerId * 2
+    }
 }
