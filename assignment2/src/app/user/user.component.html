@@ -1,0 +1,8 @@
+<input type="text" (input)="changeUsername($event)">
+<button (click)="onSubmitUser()">
+    Add User
+</button>
+<hr>
+<button type="text" [disabled]="isUsernameEmpty" (click)="resetUsername()">Reset Username</button>
+<p>{{ username }}</p>
+<h2>{{ usernameStatus }}</h2>
