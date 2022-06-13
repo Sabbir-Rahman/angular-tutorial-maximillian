@@ -1,0 +1,6 @@
+<p *ngIf="isVisible">assingment3 works!</p>
+<input type="text" class="form-control" [(ngModel)]="p_name">
+<button class="btn btn-primary" (click)="changeVisiblity()">Change visibility</button>
+<p>{{ p_name }}</p>
+<button class="btn btn-primary" (click)="addItem()">Add Item</button>
+<h3 *ngFor="let item of items; let i = index" [ngStyle]="{ backgroundColor: i > 5 ? 'blue': 'transparent' }" [ngClass]="{ 'white-text': i > 5}">{{ item }}</h3>
