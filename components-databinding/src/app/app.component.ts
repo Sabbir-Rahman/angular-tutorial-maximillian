@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'components-databinding';
-  serverElements: any = [];
-  newServerName = '';
-  newServerContent = ''
-
+  serverElements = [{ type: 'server', name: 'TestServer', content: 'Just a test'}];
+  
  
 }
